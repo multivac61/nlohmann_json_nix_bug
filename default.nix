@@ -1,6 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, stdenv, ... }:
 
-pkgs.clangStdenv.mkDerivation {
+stdenv.mkDerivation {
   name = "test";
   src = ./.;
 
